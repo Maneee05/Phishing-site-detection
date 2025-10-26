@@ -5,6 +5,7 @@ This project uses a Random Forest Classifier trained on a phishing dataset to an
 
 🚀 Features
 🧠 Machine Learning model trained using Random Forest
+
 🌐 Interactive Streamlit web app – enter a website URL and get instant results
 ⚡ Real-time prediction without accessing or visiting the website
 📊 Clean, user-friendly UI
