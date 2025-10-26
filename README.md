@@ -19,9 +19,13 @@ This project uses a Random Forest Classifier trained on a phishing dataset to an
 Phishing-site-detection/
 │
 ├── app.py                    # Streamlit app file
+|
 ├── phishing_rf_model.pkl     # Trained Random Forest model
+|
 ├── requirements.txt          # Python dependencies
+|
 ├── .gitignore
+|
 └── README.md                 # Project documentation
 
 🧩 Technologies Used
