@@ -7,7 +7,7 @@ import re
 import tldextract
 
 # ---------- CONFIG ----------
-MODEL_PATH = "phishing_rf_model.pkl"  # ensure this file is inside project root
+MODEL_PATH = "https://drive.google.com/file/d/19kpwpPdYPRkvyM6lMKv_97oTLdj8B01w/view?usp=drive_link"  # ensure this file is inside project root
 #MODEL_PATH = "phishing-streamlit/phishingdetection_py.py"
 st.set_page_config(page_title="Phishing Detector", layout="centered")
 
