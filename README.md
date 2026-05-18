@@ -1,79 +1,165 @@
-🛡️ Phishing Website Detection using Machine Learning
+# 🛡️ Phishing Website Detection using Machine Learning
 
-A web application that detects whether a given website URL is phishing or safe, built using Python, scikit-learn, and Streamlit.
-This project uses a Random Forest Classifier trained on a phishing dataset to analyze URL-based features and make predictions.
+An end-to-end Machine Learning-powered phishing website detection system built using Python and Streamlit that analyzes URLs and predicts whether a website is legitimate or phishing.
 
-🚀 Features
+This project combines Cybersecurity and Machine Learning to detect malicious websites using extracted URL-based features and a trained ML classification model.
 
-🧠 Machine Learning model trained using Random Forest
+---
 
-🌐 Interactive Streamlit web app – enter a website URL and get instant results
+## 🚀 Features
 
-⚡ Real-time prediction without accessing or visiting the website
+- 🔍 Real-time phishing URL prediction
+- 🤖 Machine Learning-based classification
+- 🌐 Streamlit interactive web interface
+- 📊 URL feature extraction pipeline
+- ⚡ Fast and lightweight prediction system
+- 🛡️ Cybersecurity-focused practical application
+- 📈 User-friendly dashboard for testing URLs
 
-📊 Clean, user-friendly UI
+---
 
-💾 Model stored and loaded using joblib
+## 🧠 Problem Statement
 
-🧩 Technologies Used
+Phishing attacks are one of the most common cyber threats where attackers create fake websites to steal sensitive information such as:
 
-Python 3.x
+- Login credentials
+- Banking information
+- Personal data
 
-Scikit-learn
+This project aims to automatically detect phishing websites using Machine Learning techniques based on URL characteristics and engineered security features.
 
-Pandas
+---
 
-NumPy
+## 🏗️ Project Architecture
+```text
+User URL Input
+       ↓
+Feature Extraction
+       ↓
+Preprocessing
+       ↓
+Trained ML Model
+       ↓
+Prediction Output
+       ↓
+Legitimate / Phishing
+```
 
+---
+
+## 🛠️ Tech Stack
+### Programming Language
+Python
+### Libraries & Frameworks
 Streamlit
+Scikit-learn
+Pandas
+NumPy
+Pickle
+### Machine Learning
+Supervised Classification
+Feature Engineering
+URL-based Security Analysis
 
-Joblib
+---
 
-Matplotlib / Seaborn (for EDA)
+## 📂 Project Structure
+```text
+Phishing-site-detection/
+│
+├── phishing-streamlit/
+│   ├── plots/
+│   │   └── evaluation.png
+│   │
+│   ├── app.py
+│   ├── feature_names.json
+│   ├── phishing_dataset.csv
+│   ├── phishing_model.pkl
+│   ├── requirements.txt
+│   └── train_model.py
+│
+├── .gitignore
+└── README.md
+```
 
-⚙️ How to Run Locally
+---
+
+## ⚙️ How to Run Locally
 
 1. Clone the Repository
    
    git clone https://github.com/Maneee05/Phishing-site-detection.git
    
-   cd Phishing-site-detection
+2. Move into the project directory:
 
-2. Install Dependencies
+   cd Phishing-site-detection/phishing-streamlit
+
+3. Install Dependencies
    
    pip install -r requirements.txt
 
-3. Run the App
+4. Run the App
    
    streamlit run app.py
 
-Streamlit will open automatically at:
-👉 http://localhost:8501
+---
 
-🧠 Model Details
+## 💻 Usage
 
-Algorithm: Random Forest Classifier
+Launch the Streamlit application
 
-Dataset: Phishing Websites Dataset (Kaggle)
+Enter a website URL
 
-Features: URL-based characteristics (length, special characters, subdomains, etc.)
+Click on Predict
 
-Libraries Used: scikit-learn, pandas, numpy
+The system classifies the URL as:
 
-The trained model is saved as:
+Legitimate Website
 
-joblib.dump(rf_model, "phishing_rf_model.pkl")
+Phishing Website
 
-And loaded in app.py as:
+---
 
-model = joblib.load("phishing_rf_model.pkl")
+## 📸 Application Preview
 
-👩‍💻 Author
+# <img width="1903" height="775" alt="Screenshot 2026-05-18 222226" src="https://github.com/user-attachments/assets/9af6941d-b670-4eb2-ae4d-b055c205c08a" />
 
+# <img width="1247" height="431" alt="Screenshot 2026-05-18 222303" src="https://github.com/user-attachments/assets/a9e9477d-c3d5-47fc-8e6f-227eea561641" />
+
+# <img width="1916" height="726" alt="Screenshot 2026-05-18 222408" src="https://github.com/user-attachments/assets/6171ca75-9782-49b5-b6d7-c106429f0dbf" />
+
+---
+
+## 📈 Future Improvements
+Deep Learning-based detection
+
+Real-time domain reputation lookup
+
+Browser extension integration
+
+API deployment using FastAPI
+
+Explainable AI (XAI) visualizations
+
+Threat intelligence integration
+
+---
+
+## 👩‍💻 Author
 Maneesha Manohar
 
-B.Tech CSE Student | Aspiring ML & Cybersecurity Engineer
+Computer Science undergraduate passionate about:
+
+AI/ML
+
+Applied Machine Learning
+
+Data Science
 
 🔗 LinkedIn - www.linkedin.com/in/maneesha-manohar-607819249
 
 🔗 GitHub - https://github.com/Maneee05
+
+---
+
+⭐ If you found this project useful, give it a star!
